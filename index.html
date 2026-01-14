@@ -1,59 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cravito – Healthy Sweet Potato Brownies</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Cravito – Guilt Free Brownies</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff7f0;color:#4b2e1f;overflow-x:hidden;}
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1606312619070-d48b4c652c3b") center/cover;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    animation:fadeIn 2s ease;
+}
+header h1{font-size:4rem;letter-spacing:2px;}
+header p{font-size:1.3rem;margin-top:10px;}
+
+section{padding:70px 10%;}
+
+h2{text-align:center;font-size:2.5rem;margin-bottom:30px;color:#6b3e26;}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    transition:transform 0.4s;
+}
+.card:hover{transform:translateY(-10px);}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card p{
+    padding:20px;
+    font-size:0.95rem;
+}
+
+.process{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    text-align:center;
+}
+.step{
+    flex:1;
+    min-width:150px;
+    margin:10px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    animation:slideUp 1.5s ease;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    transition:transform 0.5s;
+}
+.gallery img:hover{
+    transform:scale(1.1);
+}
+
+footer{
+    background:#6b3e26;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+footer h3{margin-bottom:10px;}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes slideUp{
+    from{transform:translateY(40px);opacity:0;}
+    to{transform:translateY(0);opacity:1;}
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Cravito</h1>
-  <p>Healthy Sweet Potato Brownies</p>
+    <h1>CRAVITO</h1>
+    <p>Sweet Potato Based • Guilt-Free Brownies</p>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h2>Guilt-Free Indulgence</h2>
-    <p>Fudgy, rich brownies made using real sweet potatoes.  
-       Healthy, homemade and full of love.</p>
-  </div>
-  <img src="images/brownie1.png">
+<section>
+<h2>What Makes Cravito Special</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1601972599720-0a4c8a2503c2">
+        <p>Made using sweet potato for natural sweetness and moisture.</p>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b9">
+        <p>No refined sugar, no guilt, only real ingredients.</p>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1619164816991-22c769d3c09f">
+        <p>Soft, fudgy brownies that nourish your body.</p>
+    </div>
+</div>
 </section>
 
-<section class="gallery">
-  <h2>Our Brownies</h2>
-  <div class="gallery-row">
-    <img src="images/brownie1.png" alt="Brownie 1">
-    <img src="images/brownie2.png" alt="Brownie 2">
-    <img src="images/brownie3.png" alt="Brownie 3">
-  </div>
+<section>
+<h2>Our Process</h2>
+<div class="process">
+    <div class="step">🥔 Ingredient Sourcing</div>
+    <div class="step">🍫 Fresh Preparation</div>
+    <div class="step">🔥 Careful Baking</div>
+    <div class="step">📦 Hygienic Packing</div>
+    <div class="step">💖 Guilt-Free Enjoyment</div>
+</div>
 </section>
 
-<section class="about">
-  <h2>About Cravito</h2>
-  <p>
-    Cravito is a student-led venture that creates healthy and delicious brownies
-    using sweet potatoes as a natural base. We focus on clean ingredients,
-    great taste, and guilt-free desserts.
-  </p>
-</section>
-
-<section class="values">
-  <h2>Why Choose Cravito?</h2>
-  <ul>
-    <li>✔ Made with real sweet potatoes</li>
-    <li>✔ Naturally sweet and nutritious</li>
-    <li>✔ Homemade and preservative-free</li>
-    <li>✔ Perfect balance of health and taste</li>
-  </ul>
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652c3b">
+    <img src="https://images.unsplash.com/photo-1599785209796-786432b228bc">
+    <img src="https://images.unsplash.com/photo-1542826438-8b4e4e5d1d75">
+    <img src="https://images.unsplash.com/photo-1559622214-99854a5a39cf">
+</div>
 </section>
 
 <footer>
-  <p>Founded by: Kaviya | Donatella | Harshini | Ujwala</p>
+    <h3>Cravito – Crafted with Love & Purpose</h3>
+    <p>Owners:</p>
+    <p><strong>Kaviya • Donatella • Harshini • Ujwala</strong></p>
+    <br>
+    <p>© 2026 Cravito | Guilt-Free Dessert Brand</p>
 </footer>
 
 </body>
 </html>
-
